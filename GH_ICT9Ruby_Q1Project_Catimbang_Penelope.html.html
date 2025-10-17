@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Penelope Catimbang | Personal Portfolio</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f3ff;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, section, footer {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    header {
+        text-align: center;
+        background-color: #e3d8ff;
+    }
+
+    h1, h2 {
+        color: #5b34b1;
+    }
+
+    p {
+        color: #444;
+        line-height: 1.6;
+    }
+
+    .highlight {
+        color: #7b3ff3;
+        font-weight: bold;
+    }
+
+    /* Projects */
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .project {
+        text-align: center;
+        width: 250px;
+    }
+
+    .project img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .project img:hover {
+        transform: scale(1.03);
+    }
+
+    .project p {
+        margin-top: 8px;
+        font-weight: bold;
+        color: #3a2a77;
+    }
+
+    .project small {
+        color: #555;
+    }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #bdaafc;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        margin-top: 15px;
+        background-color: #7b3ff3;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #5a2ccf;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #e3d8ff;
+        color: #333;
+        font-size: 14px;
+        margin-top: 40px;
+        padding: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hello, I'm Penelope Catimbang</h1>
+    <p>ICT 9 - Ruby | Aspiring Web Developer</p>
+    <img src="https://media.discordapp.net/attachments/1099540174247035012/1428407864929812600/image.png?ex=68f263fd&is=68f1127d&hm=8935fb056a80d3898e073f56f94a375f2b14a65419db907edc86ec05c1352dec&=&format=webp&quality=lossless" width="120" alt="Profile">
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m <span class="highlight">Penelope Sheree M. Catimbang</span>, a student who enjoys designing and coding creative web pages.  
+    I love learning how websites work, experimenting with layouts, and making pages that reflect my personality and ideas.  
+    I’m always excited to improve my skills and discover new ways to make my projects better.</p>
+</section>
+
+<section id="works">
+    <h2>My Projects</h2>
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://media.discordapp.net/attachments/1099540174247035012/1428406573746884629/image.png?ex=68f262c9&is=68f11149&hm=30ffd433569c0516c15cefd11b5ae6ea87e7b43d29a92a22d74f925c73b98bb4&=&format=webp&quality=lossless&width=1740&height=856" alt="Drill1B">
+            <p>My First Webpage</p>
+            <small>Simple HTML layout using colors and headings</small>
+        </div>
+
+        <div class="project">
+            <img src="https://media.discordapp.net/attachments/1099540174247035012/1428405867220570295/image.png?ex=68f26221&is=68f110a1&hm=5037d9278513d7f0cbdc2393af1015e749a048ce4ecf15d8c41da71e30e6e666&=&format=webp&quality=lossless" alt="Music Form">
+            <p>Music Recommendation Form</p>
+            <small>Interactive form made with input fields and checkboxes</small>
+        </div>
+
+        <div class="project">
+            <img src="https://media.discordapp.net/attachments/1099540174247035012/1428404159471816724/image.png?ex=68f2608a&is=68f10f0a&hm=0ad764c83f5052250d3ac8d43368ed33c29c439568ea168dc26f76b665acbe54&=&format=webp&quality=lossless&width=1725&height=856">
+            <p>Robotics Club Application</p>
+            <small>Form project with lists, options, and creative layout</small>
+        </div>
+
+        <div class="project">
+            <img src="https://media.discordapp.net/attachments/1099540174247035012/1428404909547454475/image.png?ex=68f2613c&is=68f10fbc&hm=2a8364747c75a685cf76537f39eae0c3b57c624408b63e29e0a59e7604fcfc07&=&format=webp&quality=lossless&width=1714&height=856" alt="Movies">
+            <p>Top 3 Favorite Movies</p>
+            <small>Page with images, captions, and short movie summaries</small>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Want to reach out or send feedback? Feel free to leave me a message below!</p>
+    <form>
+        <label>Your Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Your Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Message:</label>
+        <textarea placeholder="Type your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Penelope Sheree M. Catimbang | 9-Ruby | Personal Portfolio 💜
+</footer>
+
+</body>
+</html>
